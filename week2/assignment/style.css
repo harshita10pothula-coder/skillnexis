@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #24243e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+.clock-box, .countdown-box {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #a8b2d1;
+}
+
+.clock {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 6px;
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.date {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #8892b0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.countdown div {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 20px 25px;
+    min-width: 100px;
+}
+
+.countdown span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #64ffda;
+}
+
+.countdown label {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8892b0;
+}
