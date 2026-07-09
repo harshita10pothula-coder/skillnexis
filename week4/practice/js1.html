@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q1 - localStorage Name</title>
+</head>
+<body>
+    <h2>localStorage Name</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="saveName()">Save</button>
+    <p id="display"></p>
+
+    <script>
+        const display = document.getElementById('display');
+        const saved = localStorage.getItem('userName');
+        if (saved) {
+            display.textContent = 'Welcome back, ' + saved + '!';
+        }
+
+        function saveName() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                localStorage.setItem('userName', name);
+                display.textContent = 'Welcome, ' + name + '!';
+            }
+        }
+    </script>
+</body>
+</html>

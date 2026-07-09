@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q4 - Arrow Function Filter</title>
+</head>
+<body>
+    <h2>Numbers > 50</h2>
+    <p>Original: <span id="original"></span></p>
+    <p>Filtered: <span id="filtered"></span></p>
+
+    <script>
+        const numbers = [12, 55, 89, 23, 67, 41, 98, 30, 72, 18];
+
+        const filtered = numbers.filter(num => num > 50);
+
+        document.getElementById('original').textContent = numbers.join(', ');
+        document.getElementById('filtered').textContent = filtered.join(', ');
+    </script>
+</body>
+</html>

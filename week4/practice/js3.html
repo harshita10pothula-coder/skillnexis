@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q3 - Fetch Quotes API</title>
+</head>
+<body>
+    <h2>Random Quote</h2>
+    <button onclick="fetchQuote()">Get Quote</button>
+    <blockquote id="quote"></blockquote>
+
+    <script>
+        const fetchQuote = async () => {
+            try {
+                const res = await fetch('https://dummyjson.com/quotes/random');
+                const data = await res.json();
+                document.getElementById('quote').textContent =
+                    '"' + data.quote + '" — ' + data.author;
+            } catch {
+                document.getElementById('quote').textContent =
+                    'Failed to fetch quote.';
+            }
+        };
+    </script>
+</body>
+</html>
