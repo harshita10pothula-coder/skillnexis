@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Flexbox Centering</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            height: 100vh;
+            background: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered-box {
+            background: #16213e;
+            color: #e94560;
+            padding: 50px 60px;
+            border-radius: 16px;
+            border: 2px solid #e94560;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(233,69,96,0.3);
+        }
+
+        .centered-box h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .centered-box p {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-box">
+        <h2>Perfectly Centered</h2>
+        <p>This box is centered using Flexbox — <br>both vertically and horizontally.</p>
+    </div>
+</body>
+</html>
