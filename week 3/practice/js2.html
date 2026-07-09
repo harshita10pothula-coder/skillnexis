@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q2 - Button Color Change</title>
+</head>
+<body>
+    <h2>Click the Button</h2>
+    <button id="colorBtn" onclick="changeColor()">Click me</button>
+
+    <script>
+        function changeColor() {
+            const btn = document.getElementById('colorBtn');
+            const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6'];
+             const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            btn.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>

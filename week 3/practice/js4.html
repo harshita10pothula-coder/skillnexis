@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q4 - Today's Date</title>
+</head>
+<body>
+    <h2>Today's Date</h2>
+    <p id="dateDisplay"></p>
+
+    <script>
+        const today = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('dateDisplay').textContent = today.toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>
